@@ -1,1 +1,1 @@
-worker: cd app && python main.py
+worker: python -m app.main
