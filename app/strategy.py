@@ -1,4 +1,4 @@
-from app.smc import structure, liquidity_pool, fvg, sweep, sniper
+from smc import structure, liquidity_pool, fvg, sweep, sniper
 
 def analyze(df):
     bos, choch = structure(df)
