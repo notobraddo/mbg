@@ -11,7 +11,7 @@ from storage import save
 TIMEFRAMES = ["1d","4h","1h","15m"]
 
 async def run():
-    symbols = await get_symbols()
+    symbols = (await get_symbols())[:30]
     memory = load_memory()
 
     async with aiohttp.ClientSession() as session:
