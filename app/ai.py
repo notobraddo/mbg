@@ -1,6 +1,6 @@
 import json
 from openai import OpenAI
-from app.config import AI_KEY, AI_MODEL
+from config import AI_KEY, AI_MODEL
 
 client = OpenAI(
     base_url="https://integrate.api.nvidia.com/v1",
