@@ -7,7 +7,18 @@ SEM = asyncio.Semaphore(5)
 async def fetch(session, payload):
     async with SEM:
         async with session.post(BASE_URL, json=payload) as res:
-            return await res.json()
+            
+            if res.status != 200:
+                text = await res.text()
+                print("HTTP ERROR:", res.status, text)
+                return None
+
+            try:
+                return await res.json()
+            except:
+                text = await res.text()
+                print("NOT JSON RESPONSE:", text)
+                return None
 
 async def get_symbols():
     async with aiohttp.ClientSession() as session:
