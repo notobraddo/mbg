@@ -6,7 +6,7 @@ SEM = asyncio.Semaphore(5)
 
 async def fetch(session, payload):
     async with SEM:
-        async with session.post(API_URL, json=payload) as res:
+        async with session.post(BASE_URL, json=payload) as res:
             return await res.json()
 
 async def get_symbols():
