@@ -1,6 +1,6 @@
 import os
 
-API_URL = "https://api.hyperliquid.xyz/info"
+BASE_URL = "https://api.hyperliquid.xyz/info"
 
 TIMEFRAMES = ["1d","4h","1h","15m"]
 TOP_N = 20
