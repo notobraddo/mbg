@@ -1,5 +1,5 @@
 import requests
-from app.config import TG_TOKEN, TG_CHAT
+from config import TG_TOKEN, TG_CHAT
 
 def send(msg):
     if not TG_TOKEN:
