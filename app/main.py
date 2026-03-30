@@ -1,12 +1,12 @@
 import asyncio
 import aiohttp
 
-from app.data import get_symbols, get_candles
-from app.indicators import to_df, rsi
-from app.strategy import analyze, score
-from app.ai import memory_filter, ai_validate, load_memory
-from app.telegram import send
-from app.storage import save
+from data import get_symbols, get_candles
+from indicators import to_df, rsi
+from strategy import analyze, score
+from ai import memory_filter, ai_validate, load_memory
+from telegram import send
+from storage import save
 
 TIMEFRAMES = ["1d","4h","1h","15m"]
 
