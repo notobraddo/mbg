@@ -1,1 +1,1 @@
-worker: PYTHONPATH=. python -m app.main
+worker: cd app && python main.py
