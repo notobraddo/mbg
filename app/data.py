@@ -1,6 +1,6 @@
 import aiohttp
 import asyncio
-from app.config import API_URL
+from app.config import BASE_URL
 
 SEM = asyncio.Semaphore(5)
 
