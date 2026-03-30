@@ -1,7 +1,7 @@
 import requests
 from config import TG_TOKEN, TG_CHAT
 
-def send(msg):
+def save(msg):
     if not TG_TOKEN:
         return
 
